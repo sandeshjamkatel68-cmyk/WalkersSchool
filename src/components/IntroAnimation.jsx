@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { getVideoUrl } from '../config/videoConfig';
 import './IntroAnimation.css';
 
 export default function IntroAnimation({ onComplete }) {
   const [phase, setPhase] = useState('zooming');
+  const videoUrl = getVideoUrl();
 
   useEffect(() => {
     const t = setTimeout(() => setPhase('exiting'), 3200);
@@ -23,7 +25,7 @@ export default function IntroAnimation({ onComplete }) {
       className={`intro${phase === 'exiting' ? ' intro--exit' : ''}`}
       onTransitionEnd={handleTransitionEnd}
     >
-      <video className="intro-video" src="/videos/hero.mp4" autoPlay muted loop playsInline />
+      <video className="intro-video" src={videoUrl} autoPlay muted loop playsInline />
       <div className="intro-blend">
         <h1 className={`intro-heading${phase === 'zooming' ? ' intro-heading--zoom' : ''}`}>
           WE BELIEVE

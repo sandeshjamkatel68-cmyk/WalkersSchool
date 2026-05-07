@@ -1,14 +1,16 @@
 import { useNavigate } from 'react-router-dom';
+import { getVideoUrl } from '../config/videoConfig';
 import './HeroSection.css';
 
 export default function HeroSection() {
   const navigate = useNavigate();
+  const videoUrl = getVideoUrl();
 
   return (
     <section className="hero">
       <video
         className="hero-video"
-        src="/videos/hero.mp4"
+        src={videoUrl}
         autoPlay
         muted
         loop
