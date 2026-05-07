@@ -1,0 +1,169 @@
+.subpage {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 64px;
+}
+
+.subpage-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.subpage-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%);
+}
+
+.subpage-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 48px 80px;
+  color: white;
+}
+
+.subpage-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 10px;
+}
+
+.subpage-title {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  color: white;
+  line-height: 0.95;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.subpage-hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+  font-weight: 500;
+}
+
+.subpage-body {
+  background: white;
+  padding: 64px 0;
+}
+
+.subpage-body-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.subpage-body-inner p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.subpage-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: var(--maroon);
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.subpage-back-btn:hover {
+  background: var(--black);
+}
+
+.subpage-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 80px;
+  max-width: 1100px;
+  margin: 64px auto;
+  padding: 0 40px;
+}
+
+.subpage-info h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--maroon);
+  margin: 0 0 14px;
+}
+
+.subpage-info p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #444;
+  margin: 0;
+}
+
+.subpage-visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 40px;
+}
+
+.subpage-visit-card {
+  background: var(--bg-light);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subpage-visit-card h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--maroon);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+.subpage-visit-card p {
+  font-size: 0.88rem;
+  color: var(--gray);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.subpage-visit-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 20px;
+  background: var(--black);
+  color: white;
+  border: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-family: inherit;
+  width: fit-content;
+  transition: background 0.22s;
+}
+
+.subpage-visit-card-btn:hover {
+  background: var(--maroon);
+}

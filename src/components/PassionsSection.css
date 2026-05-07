@@ -1,0 +1,128 @@
+.passions {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.passions-content {
+  width: 36%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px;
+  gap: 20px;
+  background: var(--bg-light);
+}
+
+.passions-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--maroon);
+  margin: 0;
+}
+
+.passions-heading {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 900;
+  color: var(--black);
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.passions-body {
+  font-size: 0.88rem;
+  color: var(--gray);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.passions-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid #bbb;
+  padding: 14px 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--maroon);
+  cursor: pointer;
+  font-family: inherit;
+  max-width: 320px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.passions-link:hover {
+  border-color: var(--maroon);
+}
+
+.passions-link span {
+  font-size: 1.3rem;
+}
+
+.passions-cards {
+  flex: 1;
+  display: flex;
+  background: var(--maroon);
+}
+
+.passion-card {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-left: 1.5px solid rgba(255,255,255,0.15);
+}
+
+.passion-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.passion-card:hover img {
+  transform: scale(1.07);
+}
+
+.passion-card-overlay {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.passion-card-plus {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--black);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.passion-card:hover .passion-card-plus {
+  background: var(--maroon);
+  color: white;
+  transform: scale(1.1);
+}

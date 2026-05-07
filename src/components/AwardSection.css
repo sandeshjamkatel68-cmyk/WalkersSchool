@@ -1,0 +1,90 @@
+.award {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.award-left {
+  position: relative;
+  width: 22%;
+  background: var(--maroon);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.award-student {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.award-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 80px 80px 64px;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.award-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--maroon);
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.award-headline {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 900;
+  color: var(--black);
+  line-height: 0.95;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.award-body {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
+.award-read-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid #ccc;
+  padding: 14px 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--maroon);
+  cursor: pointer;
+  font-family: inherit;
+  max-width: 480px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.award-read-more:hover {
+  border-color: var(--maroon);
+}
+
+.award-plus {
+  font-size: 1.3rem;
+  line-height: 1;
+}

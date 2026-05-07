@@ -1,0 +1,19 @@
+.hs-outer {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hs-outer::-webkit-scrollbar {
+  display: none;
+}
+
+.hs-track {
+  display: flex;
+  height: 100%;
+  width: calc(var(--panel-count) * 100vw);
+}
